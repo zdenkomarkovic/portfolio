@@ -1,0 +1,19 @@
+@keyframes moveText {
+  100% {
+    transform: translateX(100%);
+  }
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+.infinity-text-container {
+  overflow: hidden;
+  position: relative; /* Omogućava apsolutno pozicioniranje unutar kontejnera */
+}
+
+.animate-scrolling {
+  display: inline-block;
+  animation: moveText 5s linear infinite;
+  white-space: nowrap;
+}
