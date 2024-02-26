@@ -13,7 +13,7 @@ const Home = ({ height, newHeight, onClick }) => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "100vh",
+    height: "101vh",
     width: "100%",
     position: "relative",
     color: "white",

@@ -43,7 +43,7 @@ const About = ({ height, newHeight, onClick }) => {
   }, [newHeight]);
   //  ${aboutHeight}
   return (
-    <div className={` border-b bg-lightGray`}>
+    <div className="bg-lightGray border-b">
       <div className=" w-[65%] mx-auto">
         <motion.div
           whileInView={{ scale: [0.95, 1], opacity: [0, 0.3, 0.6] }}
