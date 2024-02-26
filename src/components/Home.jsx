@@ -10,7 +10,7 @@ const Home = ({ height, newHeight, onClick }) => {
 
   const divStyle = {
     backgroundImage: `url(${backgroundPicture})`,
-    backgroundSize: "cover",
+    backgroundSize: "contain",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     height: "101vh",

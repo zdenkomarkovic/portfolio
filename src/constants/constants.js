@@ -9,6 +9,6 @@ export const cardData = [
     image: "./furnitureStore.png",
     title: "Easy production",
     subTitle: "React.js / Node.js / MongoDB",
-    url: "https://furniture-store-r4p8.vercel.app",
+    url: "https://stack-overflow-nextjs13-umber.vercel.app/",
   },
 ];

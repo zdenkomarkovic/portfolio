@@ -61,7 +61,7 @@ const About = ({ height, newHeight, onClick }) => {
         </motion.div>
         <div className="flex justify-center items-center ">
           <motion.div
-            whileInView={{ x: [-200, 0], opacity: [0, 1] }}
+            whileInView={{ x: [-150, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="text"
           >

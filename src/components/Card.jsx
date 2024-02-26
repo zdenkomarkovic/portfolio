@@ -52,11 +52,11 @@ const Card = ({ data }) => {
             className="w-48 h-48 bg-gray-400  z-50"
             onClick={handleContentClick}
           >
-            <span className="close" onClick={closeModal}>
+            <span className="cursor-pointer" onClick={closeModal}>
               &times;
             </span>
             <p>Ovo je sadržaj modala.</p>
-            <button>Visit site</button>
+            <button onClick={handleClick}>Visit site</button>
           </div>
         </div>
       )}
