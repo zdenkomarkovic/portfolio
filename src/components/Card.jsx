@@ -40,7 +40,9 @@ const Card = ({ data }) => {
             }   absolute flex flex-col justify-between w-[100%] h-[100%] inset-0 bg-stone-500 text-center duration-700 opacity-0 hover:opacity-95`}
           >
             <div>
-              <p className="text-[2vw] mt-[2vw] text-center">{data.title}</p>
+              <p className="text-[20px] md:text-[2vw] mt-[20px] md:mt-[2vw] text-center">
+                {data.title}
+              </p>
               <p className="text-[1vw]  my-[1vw] font-thin text-center">
                 {data.subTitle}
               </p>
