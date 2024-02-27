@@ -74,7 +74,7 @@ const Contact = () => {
 
   console.log(formErrors);
   return (
-    <div className=" bg-stone-500  text-white pt-[30px] md:pt-[5vw] pb-[40px] md:pb-[8vw]">
+    <div className=" bg-stone-500  text-white pt-[30px] md:pt-[5vw] pb-[50px] md:pb-[8vw]">
       <div className="w-[90%] md:w-[65vw] mx-auto text-center">
         <h2
           ref={headerRef}
@@ -86,61 +86,62 @@ const Contact = () => {
         </h2>
         <div className="flex flex-col-reverse gap-[30px] md:flex-row justify-between mt-[30px] md:mt-[5vw] items-center">
           <div className="text-center">
-            <h3 className="text-[25px] md:text-[3.1vw] font-semibold">
+            <h3 className="text-[28px] md:text-[3.1vw] font-semibold">
               Got a problem to solve?
             </h3>
             <p className="text-[15px] md:text-[1.5vw] font-extralight font">
               Tell me your ideas, and let's develop them together
             </p>
-            <p className="text-[20px] md:text-[1.5vw] font-semibold mt-[60px] md:mt-[5vw] mb-[20px] md:mb-[1vw]">
+            <p className="text-[25px] md:text-[1.5vw] font-semibold mt-[60px] md:mt-[5vw] mb-[20px] md:mb-[1vw]">
               Or contact me directly
             </p>
-
-            <a
-              href="mailto:zdenkomarkovic75@gmail.com "
-              target="_blank"
-              className="flex gap-3 justify-center items-center text-[15px] md:text-[1.25vw] mb-[0.5vw] font-light"
-            >
-              {" "}
-              <img src={emailIcon} className="w-[15px] md:w-[1.4vw]" />{" "}
-              zdenkomarkovic75@gmail.com
-            </a>
-
-            <a
-              href="tel:00381637429415"
-              target="_blank"
-              className="flex gap-3 text-[12px] md:text-[1.1vw] justify-center font-light items-center mb-[0.6vw]"
-            >
-              {" "}
-              <img
-                src={phoneIcon}
-                className="w-[12px] md:h-[1.2vw] md:w-[1.2vw]"
-              />{" "}
-              00381641967267 ( MON-FRI: 9AM - 5PM CET )
-            </a>
-            <div className="flex gap-5 justify-center">
+            <div className="flex flex-col gap-[12px] md:gap-[0.5vw]">
               <a
-                href="https://www.linkedin.com/in/zdenko-markovi%C4%87-2b5b23253"
+                href="mailto:zdenkomarkovic75@gmail.com "
                 target="_blank"
-                className="flex gap-3"
+                className="flex gap-3 justify-center items-center text-[15px] md:text-[1.25vw] font-light"
+              >
+                {" "}
+                <img src={emailIcon} className="w-[15px] md:w-[1.4vw]" />{" "}
+                zdenkomarkovic75@gmail.com
+              </a>
+
+              <a
+                href="tel:00381637429415"
+                target="_blank"
+                className="flex gap-3 text-[12px] md:text-[1.1vw] justify-center font-light items-center "
               >
                 {" "}
                 <img
-                  src={linkedinIcon}
-                  className="w-[15px]  h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
+                  src={phoneIcon}
+                  className="w-[13px] md:h-[1.2vw] md:w-[1.2vw]"
                 />{" "}
+                00381641967267 ( MON-FRI: 9AM - 5PM CET )
               </a>
-              <a
-                href="https://github.com/zdenkomarkovic"
-                target="_blank"
-                className="flex gap-3 text-[2vw]"
-              >
-                {" "}
-                <img
-                  src={gitIcon}
-                  className="w-[15px] h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
-                />{" "}
-              </a>
+              <div className="flex gap-5 justify-center">
+                <a
+                  href="https://www.linkedin.com/in/zdenko-markovi%C4%87-2b5b23253"
+                  target="_blank"
+                  className=""
+                >
+                  {" "}
+                  <img
+                    src={linkedinIcon}
+                    className="w-[15px]  h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
+                  />{" "}
+                </a>
+                <a
+                  href="https://github.com/zdenkomarkovic"
+                  target="_blank"
+                  className=""
+                >
+                  {" "}
+                  <img
+                    src={gitIcon}
+                    className="w-[15px] h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
+                  />{" "}
+                </a>
+              </div>
             </div>
           </div>
           <form
