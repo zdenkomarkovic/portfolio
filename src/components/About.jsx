@@ -53,13 +53,13 @@ const About = () => {
             ))}
           </div>
         </motion.div>
-        <div className="flex justify-center gap-[3vw] items-center ">
+        <div className="flex justify-center items-center ">
           <motion.div
             whileInView={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="text"
           >
-            <div className="">
+            <div className="mr-[-3vw]">
               <h6 className="text-[1.3vw] py-2 animate-pulse ">
                 That's me in the office
               </h6>
@@ -78,14 +78,14 @@ const About = () => {
               <h3 className="text-[1.3vw] text-red-600 uppercase mb-[1vw]">
                 Im always interested about
               </h3>
-              <div className="flex ">
+              <div className="flex  ml-[2vw]">
                 <div className=" border-white border-[2px] rounded-full">
                   <p className="text-white font-bold text-[1.4vw] px-[1.1vw] py-[0.3vw]">
                     FRONTEND/BACKEND DEVELOPMENT
                   </p>
                 </div>
               </div>
-              <div className="mx-right px-auto flex gap-10">
+              <div className=" ml-[4vw] px-auto flex gap-10">
                 <div className="flex  ">
                   <div className=" border-white border-[2px]  rounded-full">
                     <p className="text-white font-bold text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
@@ -99,7 +99,7 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="mx-right px-auto flex gap-10">
+              <div className="ml-[5vw] px-auto flex gap-10">
                 <div className="flex border-white border-[2px]  rounded-full">
                   <p className="text-white font-bold text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
                     NEW BUSINESSES
@@ -113,14 +113,18 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-[1.05vw] mt-[1vw] ">
+              <p className="text-[1.05vw] mt-[1vw] ml-[5vw] ">
                 I'm a passionate Full-Stack web developer freelancer,
                 specializing in crafting dynamic user experiences through
-                innovative UI designs and seamless functionality. Dedicated to
-                creating top-notch software that enhances lives, I work with a
-                diverse range of clients, from individuals and small businesses
-                to large enterprises. Let's work together to bring your digital
-                vision to life!
+                innovative UI designs and seamless functionality.
+              </p>
+              <p className="text-[1.05vw] mt-[1vw] ml-[3vw]">
+                Dedicated to creating top-notch software that enhances lives, I
+                work with a diverse range of clients, from individuals and small
+                businesses to large enterprises.
+              </p>
+              <p className="text-[1.05vw] mt-[1vw] ml-[1vw]">
+                Let's work together to bring your digital vision to life!
               </p>
             </div>
           </motion.div>
