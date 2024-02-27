@@ -37,7 +37,7 @@ const About = () => {
   ];
 
   return (
-    <div className="bg-stone-400">
+    <div className="bg-stone-400 border-b border-stone-500">
       <div className=" w-[65%] mx-auto">
         <motion.div
           whileInView={{ scale: [0.95, 1], opacity: [0, 0.3, 1] }}
