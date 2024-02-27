@@ -102,7 +102,7 @@ const Contact = () => {
                 className="flex gap-3 justify-center items-center text-[15px] md:text-[1.25vw] font-light"
               >
                 {" "}
-                <img src={emailIcon} className="w-[15px] md:w-[1.4vw]" />{" "}
+                <img src={emailIcon} className="w-[20px] md:w-[1.4vw]" />{" "}
                 zdenkomarkovic75@gmail.com
               </a>
 
@@ -114,7 +114,7 @@ const Contact = () => {
                 {" "}
                 <img
                   src={phoneIcon}
-                  className="w-[13px] md:h-[1.2vw] md:w-[1.2vw]"
+                  className="w-[18px] md:h-[1.2vw] md:w-[1.2vw]"
                 />{" "}
                 00381641967267 ( MON-FRI: 9AM - 5PM CET )
               </a>
@@ -127,7 +127,7 @@ const Contact = () => {
                   {" "}
                   <img
                     src={linkedinIcon}
-                    className="w-[15px]  h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
+                    className="w-[20px]  h-[20px] md:h-[1.4vw] md:w-[1.4vw]"
                   />{" "}
                 </a>
                 <a
@@ -138,7 +138,7 @@ const Contact = () => {
                   {" "}
                   <img
                     src={gitIcon}
-                    className="w-[15px] h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
+                    className="w-[20px] h-[20px] md:h-[1.4vw] md:w-[1.4vw]"
                   />{" "}
                 </a>
               </div>
@@ -147,7 +147,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-[100%]  md:w-[27vw] text-[15px]  md:text-[1.5vw]"
+            className="w-[100%]  md:w-[27vw] text-[18px]  md:text-[1.5vw]"
           >
             <div className="flex flex-col gap-[15px] md:gap-[1.3vw]">
               <input
@@ -175,7 +175,7 @@ const Contact = () => {
                 placeholder={`Your message to me`}
                 onChange={handleInput}
                 value={inputData.message}
-                className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md h-[100px] md:h-[12vw] ${
+                className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md h-[120px] md:h-[12vw] ${
                   formErrors.user_name && "border-[3px] border-red-600"
                 }`}
               />
