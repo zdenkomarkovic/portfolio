@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import emailIcon from "../../public/icons8-email-24.png";
-import phoneIcon from "../../public/icons8-phone-24.png";
-import linkedinIcon from "../../public/icons8-linkedin-24.png";
-import gitIcon from "../../public/icons8-github-24.png";
+import emailIcon from "../assets/icons8-email-24.png";
+import phoneIcon from "../assets/icons8-phone-24.png";
+import linkedinIcon from "../assets/icons8-linkedin-24.png";
+import gitIcon from "../assets/icons8-github-24.png";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -75,7 +75,7 @@ const Contact = () => {
   console.log(formErrors);
   return (
     <div className=" bg-stone-500  text-white pt-[5vw] pb-[8vw]">
-      <div className=" w-[65vw] mx-auto">
+      <div className=" w-[65vw] mx-auto text">
         <h2
           ref={headerRef}
           className={`text-[2.5vw] z-0 font-bold text-center ${
@@ -85,7 +85,7 @@ const Contact = () => {
           CONTACT
         </h2>
         <div className="flex justify-between mt-[5vw] items-center">
-          <div>
+          <div className="text-center">
             <h3 className="text-[3.1vw] font-semibold">
               Got a problem to solve?
             </h3>
@@ -99,22 +99,23 @@ const Contact = () => {
             <a
               href="mailto:zdenkomarkovic75@gmail.com "
               target="_blank"
-              className="flex gap-3 text-[1.25vw] mb-[0.5vw] items-center font-light"
+              className="flex gap-3 justify-center items-center text-[1.25vw] mb-[0.5vw] font-light"
             >
               {" "}
               <img src={emailIcon} className="h-[1.4vw] w-[1.4vw]" />{" "}
               zdenkomarkovic75@gmail.com
             </a>
+
             <a
               href="tel:00381637429415"
               target="_blank"
-              className="flex gap-3 text-[1.1vw] font-light items-center mb-[0.6vw]"
+              className="flex gap-3 text-[1.1vw] justify-center font-light items-center mb-[0.6vw]"
             >
               {" "}
               <img src={phoneIcon} className="h-[1.2vw] w-[1.2vw]" />{" "}
               00381641967267 ( MON-FRI: 9AM - 5PM CET )
             </a>
-            <div className="flex gap-5">
+            <div className="flex gap-5 justify-center">
               <a
                 href="https://www.linkedin.com/in/zdenko-markovi%C4%87-2b5b23253"
                 target="_blank"

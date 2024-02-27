@@ -53,14 +53,14 @@ const About = () => {
             ))}
           </div>
         </motion.div>
-        <div className="flex justify-center gap-[3vw] items-center ">
+        <div className="flex justify-center items-center ">
           <motion.div
             whileInView={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="text"
           >
             <div className="">
-              <h6 className="text-[1.3vw] py-2 animate-pulse ">
+              <h6 className="text-[1.3vw] py-2 ml-[7.5vw] animate-pulse ">
                 That's me in the office
               </h6>
               <img
@@ -75,23 +75,28 @@ const About = () => {
             className="text  w-[67%]"
           >
             <div className="flex flex-col gap-[0.7vw]">
-              <h3 className="text-[1.3vw] text-red-600 uppercase mb-[1vw]">
+              <h3 className="text-[1.3vw] text-center text-red-600 uppercase mb-[1vw]">
                 Im always interested about
               </h3>
               <div className="flex ">
-                <div className=" border-white border-[2px] rounded-full">
+                <div className=" border-white border-[2px] ml-[4vw] rounded-full">
                   <p className="text-white font-bold text-[1.4vw] px-[1.1vw] py-[0.3vw]">
                     FRONTEND/BACKEND DEVELOPMENT
                   </p>
                 </div>
               </div>
-              <div className="mx-right px-auto flex gap-10">
-                <div className="flex  ">
-                  <div className=" border-white border-[2px]  rounded-full">
-                    <p className="text-white font-bold text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
-                      WEBFLOW DEVELOPMENT
-                    </p>
-                  </div>
+              <div className="flex">
+                <div className=" border-white border-[2px]  rounded-full">
+                  <p className="text-white font-bold text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
+                    WEBFLOW DEVELOPMENT
+                  </p>
+                </div>
+              </div>
+              <div className="mx-auto px-auto flex gap-10">
+                <div className="flex border-white border-[2px]  rounded-full">
+                  <p className="text-white font-bold text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
+                    NEW BUSINESSES
+                  </p>
                 </div>
                 <div className="flex border-white border-[2px]  rounded-full">
                   <p className="text-white font-bold text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
@@ -99,18 +104,11 @@ const About = () => {
                   </p>
                 </div>
               </div>
-              <div className="mx-right px-auto flex gap-10">
+              <div className="flex ml-[4vw]">
                 <div className="flex border-white border-[2px]  rounded-full">
-                  <p className="text-white font-bold text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
-                    NEW BUSINESSES
+                  <p className="text-white font-bold mx-auto text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
+                    EXTREME SPORTS
                   </p>
-                </div>
-                <div className="flex">
-                  <div className="flex border-white border-[2px]  rounded-full">
-                    <p className="text-white font-bold mx-auto text-[1.4vw] border px-[1.1vw] py-[0.3vw] rounded-full">
-                      EXTREME SPORTS
-                    </p>
-                  </div>
                 </div>
               </div>
               <p className="text-[1.05vw] mt-[1vw] ">
