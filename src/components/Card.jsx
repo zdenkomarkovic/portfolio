@@ -22,14 +22,14 @@ const Card = ({ data }) => {
     <div>
       {" "}
       <div
-        className="w-[30vw] relative"
+        className="w-[30vw] relative rounded-3xl overflow-hidden text-white "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <img src={data.image} alt="furniture store" />
+        <img src={data.image} alt="furniture store" className="h-[22vw]" />
 
         {isHovered && (
-          <div className="absolute w-[100%] h-[100%] inset-0 bg-slate-100 text-right ">
+          <div className="  absolute w-[100%] h-[100%] inset-0 bg-stone-500 text-right duration-700 opacity-0 hover:opacity-95">
             <p className="text-[2vw] my-[2vw] text-center">{data.title}</p>
             <p className="text-[1vw] font-thin text-center">{data.subTitle}</p>
 
@@ -45,11 +45,11 @@ const Card = ({ data }) => {
       {isModalOpen && (
         <div
           className="
-         fixed top-0 left-0 w-[100%] h-[100%] bg-slate-300  z-10 opacity-90 flex justify-center items-center"
+         fixed top-0 left-0 w-[100%] h-[100%] bg-stone-400  z-1000 z-50 bg-opacity-90 flex justify-center items-center"
           onClick={closeModal}
         >
           <div
-            className="w-48 h-48 bg-gray-400  z-50"
+            className="w-[30vw] h-[30vw] bg-stone-900  z-50 opacity-100"
             onClick={handleContentClick}
           >
             <span className="cursor-pointer" onClick={closeModal}>

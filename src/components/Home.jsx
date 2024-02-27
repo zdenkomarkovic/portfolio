@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from "react";
 import backgroundPicture from "../assets/cover.jpg";
 
-const Home = ({ height, newHeight, onClick }) => {
-  const [aboutHeight, setAboutHeight] = useState(height);
-
-  useEffect(() => {
-    setAboutHeight(newHeight);
-  }, [newHeight]);
-
+const Home = () => {
   const divStyle = {
     backgroundImage: `url(${backgroundPicture})`,
-    backgroundSize: "contain",
+    backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     height: "101vh",
@@ -29,11 +23,11 @@ const Home = ({ height, newHeight, onClick }) => {
 
   return (
     <>
-      <div className={` border-b flex`} style={{ ...divStyle }}>
+      <div className="flex" style={{ ...divStyle }}>
         <div style={overlayStyle}></div>
         <div className="flex z-20">
           <div className="flex  flex-col items-center mt-[10vw] ml-[20vw] justify-center">
-            <h1 className="text-[2.5vw] ">
+            <h1 className="text-[2.5vw] z-10 ">
               Hello I'm <span className=" text-red-600">Zdenko Markovic</span>.
             </h1>
             <h2 className="text-[2.5vw] z-10">
@@ -41,7 +35,7 @@ const Home = ({ height, newHeight, onClick }) => {
             </h2>
             <h2 className="text-[2.5vw] z-10">Nice to meet you!</h2>
 
-            <h2 className="text-[1.1vw] mt-[5vw] border rounded-full px-[1.1vw] py-[0.35vw]">
+            <h2 className="text-[1.1vw] mt-[5vw] border rounded-full px-[1.1vw] py-[0.35vw] z-10">
               Please take a look around
             </h2>
           </div>

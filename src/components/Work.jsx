@@ -4,68 +4,68 @@ import Card from "./Card";
 import { cardData } from "../constants/constants";
 
 const Work = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
+  const [isCardVisible, setIsCardVisible] = useState(false);
   const headerRef = useRef(null);
-  const [isHovered, setIsHovered] = useState(false);
+  const cardRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const element = headerRef.current;
-      if (element) {
-        const rect = element.getBoundingClientRect();
+    const handleHeaderScroll = () => {
+      const headerElement = headerRef.current;
+      if (headerElement) {
+        const rect = headerElement.getBoundingClientRect();
         const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
-        setIsVisible(isInView);
+        setIsHeaderVisible(isInView);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const handleCardScroll = () => {
+      const cardElement = cardRef.current;
+      if (cardElement) {
+        const rect = cardElement.getBoundingClientRect();
+        const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        setIsCardVisible(isInView);
+      }
+    };
+
+    window.addEventListener("scroll", handleHeaderScroll);
+    window.addEventListener("scroll", handleCardScroll);
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleHeaderScroll);
+      window.removeEventListener("scroll", handleCardScroll);
     };
   }, []);
 
   return (
-    <div className="w-[65%] mx-auto border-b-2">
-      <div className="mt-[5vw] mb-[10vw]">
-        <h1
-          ref={headerRef}
-          className={`text-[2.5vw] font-bold text-center ${
-            isVisible ? " animate-slide-in-left" : ""
-          }`}
-        >
-          PROJECTS
-        </h1>
-
-        <div
-          className={`${
-            isVisible ? " animate-slide-in-right" : ""
-          } w-[15vw] h-[0.2vw] bg-black mx-auto`}
-        ></div>
-      </div>
-      <div className="flex justify-between mb-[10vw]">
-        {/* <div
-          className="w-[30vw] relative"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          <a
-            href="https://furniture-store-r4p8.vercel.app"
-            target="blank"
-            className="cursor-pointer"
+    <div className="bg-stone-400 text-white">
+      <div className="w-[65%] mx-auto pt-[6vw] pb-[10vw]">
+        <div className=" mb-[8vw]">
+          <h2
+            ref={headerRef}
+            className={`text-[2.5vw] font-bold text-center ${
+              isHeaderVisible ? " animate-slide-in-left" : ""
+            }`}
           >
-            <img src={furnitureStore} alt="furniture store" />
-          </a>
-          {isHovered && (
-            <div className="absolute w-[100%] h-[100%] inset-0 bg-slate-100  ">
-              <p>Furniture store</p>
-              <p>React/Node/MongoDB</p>
-              <button>Learn more</button>
-            </div>
-          )}
-        </div> */}
-        {cardData.map((data, i) => {
-          return <Card key={i} data={data} />;
-        })}
+            PROJECTS
+          </h2>
+
+          <div
+            className={`${
+              isHeaderVisible ? " animate-slide-in-right" : ""
+            } w-[15vw] h-[0.2vw] bg-white mx-auto`}
+          ></div>
+        </div>
+        <div
+          ref={cardRef}
+          className={`flex justify-between transition-opacity duration-1000 ${
+            isCardVisible ? "" : ""
+          } `}
+        >
+          {cardData.map((data, i) => {
+            return <Card key={i} data={data} />;
+          })}
+        </div>
       </div>
     </div>
   );

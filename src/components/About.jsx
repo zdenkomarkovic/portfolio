@@ -8,9 +8,7 @@ import { BsTools } from "react-icons/bs";
 import { GoLightBulb } from "react-icons/go";
 import { motion } from "framer-motion";
 
-const About = ({ height, newHeight, onClick }) => {
-  const [aboutHeight, setAboutHeight] = useState(height);
-
+const About = () => {
   const items = [
     {
       icon: <IoDiamondOutline className="text-[3vw] mx-auto" />,
@@ -38,19 +36,15 @@ const About = ({ height, newHeight, onClick }) => {
     },
   ];
 
-  useEffect(() => {
-    setAboutHeight(newHeight);
-  }, [newHeight]);
-  //  ${aboutHeight}
   return (
-    <div className="bg-lightGray border-b">
+    <div className="bg-stone-300">
       <div className=" w-[65%] mx-auto">
         <motion.div
-          whileInView={{ scale: [0.95, 1], opacity: [0, 0.3, 0.6] }}
+          whileInView={{ scale: [0.95, 1], opacity: [0, 0.3, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className="header-title"
         >
-          <div className=" flex pt-20 justify-between pb-10">
+          <div className=" flex py-[5vw] justify-between">
             {items.map((item, index) => (
               <div key={index}>
                 {item.icon}
@@ -134,7 +128,7 @@ const About = ({ height, newHeight, onClick }) => {
           transition={{ duration: 1 }}
           className="card"
         >
-          <div className="flex gap-[2vw] justify-between my-[3vw]">
+          <div className="flex gap-[2vw] justify-between py-[6vw]">
             <p className=" text-[0.8vw] border-black border-[2px] font-bold px-[0.5vw] py-[0.1vw] rounded-full">
               HTML
             </p>
