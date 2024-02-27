@@ -157,7 +157,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.user_name}
                 className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md ${
-                  formErrors.user_name && "border-[3px] border-red-600"
+                  formErrors.user_name && "animate-pulse"
                 }`}
               />
               <input
@@ -167,7 +167,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.user_email}
                 className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md ${
-                  formErrors.user_name && "border-[3px] border-red-600"
+                  formErrors.user_name && "animate-pulse"
                 }`}
               />
               <textarea
@@ -176,7 +176,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.message}
                 className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md h-[120px] md:h-[12vw] ${
-                  formErrors.user_name && "border-[3px] border-red-600"
+                  formErrors.user_name && " animate-pulse "
                 }`}
               />
               <div>

@@ -39,11 +39,11 @@ const Work = () => {
 
   return (
     <div className="bg-stone-400 text-white">
-      <div className="w-[65%] mx-auto pt-[6vw] pb-[10vw]">
+      <div className="w-[90%] md:w-[65%] mx-auto pt-[50px] pb-[80px] md:pt-[6vw] :pb-[10vw]">
         <div className=" mb-[8vw]">
           <h2
             ref={headerRef}
-            className={`text-[2.5vw] font-bold text-center ${
+            className={`text-[30px] md:text-[2.5vw] font-bold text-center ${
               isHeaderVisible ? " animate-slide-in-left" : ""
             }`}
           >
@@ -53,12 +53,12 @@ const Work = () => {
           <div
             className={`${
               isHeaderVisible ? " animate-slide-in-right" : ""
-            } w-[15vw] h-[0.2vw] bg-white mx-auto`}
+            } w-[160px] md:w-[15vw] h-[2.5px] md:h-[0.2vw] bg-white mx-auto`}
           ></div>
         </div>
         <div
           ref={cardRef}
-          className={`flex justify-between transition-opacity duration-1000 ${
+          className={`flex flex-col gap-[30px] md:gap-0 md:flex-row justify-between transition-opacity duration-1000 ${
             isCardVisible ? "" : ""
           } `}
         >

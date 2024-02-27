@@ -22,14 +22,14 @@ const Card = ({ data }) => {
     <div>
       {" "}
       <div
-        className="w-[30vw] h-[20vw] relative rounded-3xl bg-white overflow-hidden text-white flex flex-col justify-between "
+        className="md:w-[30vw] md:h-[20vw] relative rounded-3xl bg-white overflow-hidden text-white flex flex-col justify-between "
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <img
           src={data.image}
           alt="furniture store"
-          className="w-[30vw] h-[20vw] rounded-3xl"
+          className="md:w-[30vw] md:h-[20vw] rounded-3xl"
         />
 
         {isHovered && (
