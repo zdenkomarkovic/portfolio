@@ -39,8 +39,8 @@ const Work = () => {
 
   return (
     <div className="bg-stone-400 text-white">
-      <div className="w-[90%] md:w-[65%] mx-auto pt-[50px] pb-[80px] md:pt-[6vw] :pb-[10vw]">
-        <div className=" mb-[8vw]">
+      <div className="w-[90%] md:w-[65%] mx-auto pt-[50px] pb-[60px] md:pt-[6vw] :pb-[10vw]">
+        <div className="mb-[50px] md:mb-[8vw]">
           <h2
             ref={headerRef}
             className={`text-[30px] md:text-[2.5vw] font-bold text-center ${
@@ -58,7 +58,7 @@ const Work = () => {
         </div>
         <div
           ref={cardRef}
-          className={`flex flex-col gap-[30px] md:gap-0 md:flex-row justify-between transition-opacity duration-1000 ${
+          className={`flex flex-col gap-[40px] md:gap-0 md:flex-row justify-between transition-opacity duration-1000 ${
             isCardVisible ? "" : ""
           } `}
         >

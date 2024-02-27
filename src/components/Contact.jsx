@@ -118,7 +118,7 @@ const Contact = () => {
                 />{" "}
                 00381641967267 ( MON-FRI: 9AM - 5PM CET )
               </a>
-              <div className="flex gap-5 justify-center">
+              <div className="flex gap-5 justify-center items-center">
                 <a
                   href="https://www.linkedin.com/in/zdenko-markovi%C4%87-2b5b23253"
                   target="_blank"
@@ -138,7 +138,7 @@ const Contact = () => {
                   {" "}
                   <img
                     src={gitIcon}
-                    className="w-[22px] h-[22px] md:h-[1.4vw] md:w-[1.4vw]"
+                    className="w-[26px] h-[26px] md:h-[1.55vw] md:w-[1.55vw]"
                   />{" "}
                 </a>
               </div>
@@ -167,7 +167,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.user_email}
                 className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md ${
-                  formErrors.user_name && "animate-pulse"
+                  formErrors.user_email && "animate-pulse"
                 }`}
               />
               <textarea
@@ -176,7 +176,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.message}
                 className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md h-[120px] md:h-[12vw] ${
-                  formErrors.user_name && " animate-pulse "
+                  formErrors.message && " animate-pulse "
                 }`}
               />
               <div>
