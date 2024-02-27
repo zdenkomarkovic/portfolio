@@ -39,7 +39,7 @@ const Work = () => {
 
   return (
     <div className="bg-stone-400 text-white">
-      <div className="w-[90%] md:w-[65%] mx-auto pt-[60px] pb-[80px] md:pt-[6vw] :pb-[10vw]">
+      <div className="w-[90%] md:w-[65%] mx-auto pt-[60px] pb-[70px] md:pt-[6vw] md:pb-[8vw]">
         <div className="mb-[60px] md:mb-[8vw]">
           <h2
             ref={headerRef}
@@ -58,7 +58,7 @@ const Work = () => {
         </div>
         <div
           ref={cardRef}
-          className={`flex flex-col gap-[40px] md:gap-0 md:flex-row justify-between transition-opacity duration-1000 ${
+          className={`flex pb-[25px]  flex-col gap-[40px] md:pb-[5vw] md:gap-0 md:flex-row justify-between transition-opacity duration-1000 ${
             isCardVisible ? "" : ""
           } `}
         >
@@ -66,6 +66,7 @@ const Work = () => {
             return <Card key={i} data={data} />;
           })}
         </div>
+        <div className="w-[70%] h-[2px] bg-stone-500 mx-auto"></div>
       </div>
     </div>
   );
