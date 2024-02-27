@@ -74,45 +74,48 @@ const Contact = () => {
 
   console.log(formErrors);
   return (
-    <div className=" bg-stone-500  text-white pt-[5vw] pb-[8vw]">
-      <div className=" w-[65vw] mx-auto text">
+    <div className=" bg-stone-500  text-white pt-[30px] md:pt-[5vw] pb-[40px] md:pb-[8vw]">
+      <div className="w-[90%] md:w-[65vw] mx-auto text-center">
         <h2
           ref={headerRef}
-          className={`text-[2.5vw] z-0 font-bold text-center ${
+          className={`text-[30px] md:text-[2.5vw] font-bold text-center ${
             isVisible ? "transform duration-1000  scale-100 " : "scale-50"
           }`}
         >
           CONTACT
         </h2>
-        <div className="flex justify-between mt-[5vw] items-center">
+        <div className="flex flex-col-reverse gap-[30px] md:flex-row justify-between mt-[30px] md:mt-[5vw] items-center">
           <div className="text-center">
-            <h3 className="text-[3.1vw] font-semibold">
+            <h3 className="text-[25px] md:text-[3.1vw] font-semibold">
               Got a problem to solve?
             </h3>
-            <p className="text-[1.5vw] font-extralight font">
+            <p className="text-[15px] md:text-[1.5vw] font-extralight font">
               Tell me your ideas, and let's develop them together
             </p>
-            <p className="text-[1.5vw] font-semibold mt-[5vw]  mb-[1vw]">
+            <p className="text-[20px] md:text-[1.5vw] font-semibold mt-[60px] md:mt-[5vw] mb-[20px] md:mb-[1vw]">
               Or contact me directly
             </p>
 
             <a
               href="mailto:zdenkomarkovic75@gmail.com "
               target="_blank"
-              className="flex gap-3 justify-center items-center text-[1.25vw] mb-[0.5vw] font-light"
+              className="flex gap-3 justify-center items-center text-[15px] md:text-[1.25vw] mb-[0.5vw] font-light"
             >
               {" "}
-              <img src={emailIcon} className="h-[1.4vw] w-[1.4vw]" />{" "}
+              <img src={emailIcon} className="w-[15px] md:w-[1.4vw]" />{" "}
               zdenkomarkovic75@gmail.com
             </a>
 
             <a
               href="tel:00381637429415"
               target="_blank"
-              className="flex gap-3 text-[1.1vw] justify-center font-light items-center mb-[0.6vw]"
+              className="flex gap-3 text-[12px] md:text-[1.1vw] justify-center font-light items-center mb-[0.6vw]"
             >
               {" "}
-              <img src={phoneIcon} className="h-[1.2vw] w-[1.2vw]" />{" "}
+              <img
+                src={phoneIcon}
+                className="w-[12px] md:h-[1.2vw] md:w-[1.2vw]"
+              />{" "}
               00381641967267 ( MON-FRI: 9AM - 5PM CET )
             </a>
             <div className="flex gap-5 justify-center">
@@ -122,7 +125,10 @@ const Contact = () => {
                 className="flex gap-3"
               >
                 {" "}
-                <img src={linkedinIcon} className="h-[1.4vw] w-[1.4vw]" />{" "}
+                <img
+                  src={linkedinIcon}
+                  className="w-[15px]  h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
+                />{" "}
               </a>
               <a
                 href="https://github.com/zdenkomarkovic"
@@ -130,19 +136,26 @@ const Contact = () => {
                 className="flex gap-3 text-[2vw]"
               >
                 {" "}
-                <img src={gitIcon} className="h-[1.4vw] w-[1.4vw]" />{" "}
+                <img
+                  src={gitIcon}
+                  className="w-[15px] h-[15px] md:h-[1.4vw] md:w-[1.4vw]"
+                />{" "}
               </a>
             </div>
           </div>
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="flex flex-col gap-[1.3vw] w-[27vw]">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="w-[90%]  md:w-[27vw] text-[15px]  md:text-[1.5vw]"
+          >
+            <div className="flex flex-col gap-[15px] md:gap-[1.3vw]">
               <input
                 name="user_name"
                 type="text"
                 placeholder="Your name:"
                 onChange={handleInput}
                 value={inputData.user_name}
-                className={`px-[1.5vw] py-[0.7vw] text-[1.5vw] text-stone-500 rounded-md ${
+                className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md ${
                   formErrors.user_name && "border-[3px] border-red-600"
                 }`}
               />
@@ -152,7 +165,7 @@ const Contact = () => {
                 placeholder="Your email"
                 onChange={handleInput}
                 value={inputData.user_email}
-                className={`px-[1.5vw] py-[0.7vw] text-[1.5vw] text-stone-500 rounded-md ${
+                className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md ${
                   formErrors.user_name && "border-[3px] border-red-600"
                 }`}
               />
@@ -161,7 +174,7 @@ const Contact = () => {
                 placeholder={`Your message to me`}
                 onChange={handleInput}
                 value={inputData.message}
-                className={`px-[1.5vw] py-[0.7vw] text-[1.5vw] text-stone-500 rounded-md h-[12vw] ${
+                className={`px-[15px] py-[7px] md:px-[1.5vw] md:py-[0.7vw] text-stone-500 rounded-sm md:rounded-md h-[100px] md:h-[12vw] ${
                   formErrors.user_name && "border-[3px] border-red-600"
                 }`}
               />
@@ -169,7 +182,7 @@ const Contact = () => {
                 <input
                   type="submit"
                   value="Send"
-                  className="bg-white mt-[1vw] px-[5vw] text-stone-500 py-[0.5vw] text-[1.5vw] rounded-full"
+                  className="bg-white mt-[1vw] px-[25px] md:px-[5vw] text-stone-500 md:py-[0.5vw] rounded-full"
                 />
               </div>
               {/* <button className="bg-white mt-[1vw] px-[1.5vw] text-stone-500 py-[0.5vw] text-[1.5vw] rounded-full">
