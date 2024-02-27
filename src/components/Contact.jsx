@@ -147,7 +147,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-[90%]  md:w-[27vw] text-[15px]  md:text-[1.5vw]"
+            className="w-[100%]  md:w-[27vw] text-[15px]  md:text-[1.5vw]"
           >
             <div className="flex flex-col gap-[15px] md:gap-[1.3vw]">
               <input
