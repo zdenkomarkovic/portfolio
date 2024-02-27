@@ -1,5 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import emailIcon from "../../public/icons8-email-24.png";
+import phoneIcon from "../../public/icons8-phone-24.png";
+import linkedinIcon from "../../public/icons8-linkedin-24.png";
+import gitIcon from "../../public/icons8-github-24.png";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -98,10 +102,7 @@ const Contact = () => {
               className="flex gap-3 text-[1.25vw] mb-[0.5vw] items-center font-light"
             >
               {" "}
-              <img
-                src="../../public/icons8-email-24.png"
-                className="h-[1.4vw] w-[1.4vw]"
-              />{" "}
+              <img src={emailIcon} className="h-[1.4vw] w-[1.4vw]" />{" "}
               zdenkomarkovic75@gmail.com
             </a>
             <a
@@ -110,10 +111,7 @@ const Contact = () => {
               className="flex gap-3 text-[1.1vw] font-light items-center mb-[0.6vw]"
             >
               {" "}
-              <img
-                src="../../public/icons8-phone-24.png"
-                className="h-[1.2vw] w-[1.2vw]"
-              />{" "}
+              <img src={phoneIcon} className="h-[1.2vw] w-[1.2vw]" />{" "}
               00381641967267 ( MON-FRI: 9AM - 5PM CET )
             </a>
             <div className="flex gap-5">
@@ -123,10 +121,7 @@ const Contact = () => {
                 className="flex gap-3"
               >
                 {" "}
-                <img
-                  src="../../public/icons8-linkedin-24.png"
-                  className="h-[1.4vw] w-[1.4vw]"
-                />{" "}
+                <img src={linkedinIcon} className="h-[1.4vw] w-[1.4vw]" />{" "}
               </a>
               <a
                 href="https://github.com/zdenkomarkovic"
@@ -134,10 +129,7 @@ const Contact = () => {
                 className="flex gap-3 text-[2vw]"
               >
                 {" "}
-                <img
-                  src="../../public/icons8-github-24.png"
-                  className="h-[1.4vw] w-[1.4vw]"
-                />{" "}
+                <img src={gitIcon} className="h-[1.4vw] w-[1.4vw]" />{" "}
               </a>
             </div>
           </div>
@@ -150,7 +142,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.user_name}
                 className={`px-[1.5vw] py-[0.7vw] text-[1.5vw] text-stone-500 rounded-md ${
-                  formErrors.user_name && "border-8 border-red-500"
+                  formErrors.user_name && "border-[3px] border-red-600"
                 }`}
               />
               <input
@@ -160,7 +152,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.user_email}
                 className={`px-[1.5vw] py-[0.7vw] text-[1.5vw] text-stone-500 rounded-md ${
-                  formErrors.user_name && "border-8 border-red-500"
+                  formErrors.user_name && "border-[3px] border-red-600"
                 }`}
               />
               <textarea
@@ -169,7 +161,7 @@ const Contact = () => {
                 onChange={handleInput}
                 value={inputData.message}
                 className={`px-[1.5vw] py-[0.7vw] text-[1.5vw] text-stone-500 rounded-md h-[12vw] ${
-                  formErrors.user_name && "border-8 border-red-500"
+                  formErrors.user_name && "border-[3px] border-red-600"
                 }`}
               />
               <div>
