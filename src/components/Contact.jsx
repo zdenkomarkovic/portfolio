@@ -74,7 +74,7 @@ const Contact = () => {
 
   console.log(formErrors);
   return (
-    <div className=" bg-stone-500  text-white pt-[30px] md:pt-[5vw] pb-[50px] md:pb-[8vw]">
+    <div className=" bg-stone-500  text-white pt-[50px] md:pt-[5vw] pb-[50px] md:pb-[8vw]">
       <div className="w-[90%] md:w-[65vw] mx-auto text-center">
         <h2
           ref={headerRef}
@@ -84,15 +84,15 @@ const Contact = () => {
         >
           CONTACT
         </h2>
-        <div className="flex flex-col-reverse gap-[30px] md:flex-row justify-between mt-[30px] md:mt-[5vw] items-center">
+        <div className="flex flex-col-reverse gap-[30px] md:flex-row justify-between mt-[50px] md:mt-[5vw] items-center">
           <div className="text-center">
-            <h3 className="text-[28px] md:text-[3.1vw] font-semibold">
+            <h3 className="text-[32px] md:text-[3.1vw] font-semibold">
               Got a problem to solve?
             </h3>
             <p className="text-[15px] md:text-[1.5vw] font-extralight font">
               Tell me your ideas, and let's develop them together
             </p>
-            <p className="text-[25px] md:text-[1.5vw] font-semibold mt-[60px] md:mt-[5vw] mb-[20px] md:mb-[1vw]">
+            <p className="text-[25px] md:text-[1.5vw] font-semibold mt-[80px] md:mt-[5vw] mb-[15px] md:mb-[1vw]">
               Or contact me directly
             </p>
             <div className="flex flex-col gap-[12px] md:gap-[0.5vw]">
@@ -127,7 +127,7 @@ const Contact = () => {
                   {" "}
                   <img
                     src={linkedinIcon}
-                    className="w-[20px]  h-[20px] md:h-[1.4vw] md:w-[1.4vw]"
+                    className="w-[22px]  h-[22px] md:h-[1.4vw] md:w-[1.4vw]"
                   />{" "}
                 </a>
                 <a
@@ -138,7 +138,7 @@ const Contact = () => {
                   {" "}
                   <img
                     src={gitIcon}
-                    className="w-[20px] h-[20px] md:h-[1.4vw] md:w-[1.4vw]"
+                    className="w-[22px] h-[22px] md:h-[1.4vw] md:w-[1.4vw]"
                   />{" "}
                 </a>
               </div>
@@ -147,7 +147,7 @@ const Contact = () => {
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="w-[100%]  md:w-[27vw] text-[18px]  md:text-[1.5vw]"
+            className="w-[90%]  md:w-[27vw] text-[18px]  md:text-[1.5vw]"
           >
             <div className="flex flex-col gap-[15px] md:gap-[1.3vw]">
               <input
