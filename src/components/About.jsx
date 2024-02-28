@@ -9,10 +9,21 @@ import { GoLightBulb } from "react-icons/go";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [isCardVisible, setIsCardVisible] = useState(false);
+  const headerRef = useRef(null);
   const cardRef = useRef(null);
 
   useEffect(() => {
+    const handleHeaderScroll = () => {
+      const headerElement = headerRef.current;
+      if (headerElement) {
+        const rect = headerElement.getBoundingClientRect();
+        const isInView = rect.bottom >= 0 && rect.top <= window.innerHeight;
+        setIsHeaderVisible(isInView);
+      }
+    };
+
     const handleCardScroll = () => {
       const cardElement = cardRef.current;
       if (cardElement) {
@@ -22,12 +33,14 @@ const About = () => {
       }
     };
 
+    window.addEventListener("scroll", handleHeaderScroll);
     window.addEventListener("scroll", handleCardScroll);
 
     return () => {
+      window.removeEventListener("scroll", handleHeaderScroll);
       window.removeEventListener("scroll", handleCardScroll);
     };
-  }, []);
+  }, [scroll]);
 
   const items = [
     {
@@ -90,7 +103,7 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className=" pb-[30px] flex text-center justify-around w-full md:w-0 md:py-[5vw]">
+          <div className=" flex text-center justify-around w-full md:w-0 md:py-[5vw]">
             {items.map((item, i) => (
               <div
                 key={i}
@@ -104,10 +117,10 @@ const About = () => {
         </motion.div>
         <div className="w-[90%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
           <div
-            ref={cardRef}
+            ref={headerRef}
             className={`${
-              isCardVisible ? "animate-slide-in-left-light" : ""
-            }  mt-[3vw]`}
+              isHeaderVisible ? "animate-slide-in-left-light" : ""
+            } pt-[50px]  md:mt-[3vw]`}
           >
             <div className="md:mr-[-4.2vw] relative">
               <h6 className="absolute text-[15px] left-16 top-4 md:left-3 md:top-0 text-white md:text-left md:text-[1.4vw] py-2 animate-pulse ">

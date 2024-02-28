@@ -13,13 +13,12 @@
   }
 }
 
-.animate-slide-in-left-light {
+.animate-slide-in-left {
   animation: slide-in-left 1.5s ease-out forwards;
 }
-
 @keyframes slide-in-left-light {
   0% {
-    transform: translateX(-50%) scale(0.8);
+    transform: translateX(-100%);
     opacity: 0;
   }
   100% {
@@ -43,7 +42,7 @@
   }
 }
 
-.animate-slide-in-right-light {
+.animate-slide-in-right {
   animation: slide-in-right 2s ease-out backwards;
 }
 @keyframes slide-in-right-light {

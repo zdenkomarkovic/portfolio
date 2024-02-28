@@ -46,7 +46,7 @@ const Card = ({ data }) => {
               <p className="text-[15px] md:text-[1vw] my-[10px] md:my-[1vw] font-thin text-center">
                 {data.subTitle}
               </p>
-              <p className="text-[11px] leading-tight px-[5px] md:px-[1vw] md:text-[0.8vw] font-thin text-center">
+              <p className="text-[13px] leading-tight px-[5px] md:px-[1vw] md:text-[0.8vw] font-thin text-center">
                 {data.info}
               </p>
             </div>
