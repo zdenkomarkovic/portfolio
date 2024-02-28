@@ -33,7 +33,7 @@ const Home = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
   };
 
   return (
@@ -69,7 +69,7 @@ const Home = () => {
           </h2>
         </div>
         <div className="flex">
-          <div className="flex flex-col items-center ml-[20px] justify-center  mt-[270px]">
+          <div className="flex flex-col items-center ml-[20px] justify-center  mt-[290px]">
             <h1 className="text-[21px] z-10 ">
               Hello I'm <span className=" text-red-600">Zdenko Markovic</span>.
             </h1>
@@ -80,7 +80,7 @@ const Home = () => {
               Nice to meet you!
             </h2>
 
-            <h2 className="text-[15px] mt-[70px] px-[1.1vw] py-[0.35vw] z-10">
+            <h2 className="text-[15px] mt-[50px] px-[1.1vw] py-[0.35vw] z-10">
               Please take a look around
             </h2>
           </div>
