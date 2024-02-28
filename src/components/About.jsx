@@ -19,7 +19,7 @@ const About = () => {
       const headerElement = headerRef.current;
       if (headerElement) {
         const rect = headerElement.getBoundingClientRect();
-        const isInView = rect.bottom >= 0 && rect.top <= window.innerHeight;
+        const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
         setIsHeaderVisible(isInView);
       }
     };
@@ -103,7 +103,7 @@ const About = () => {
               </div>
             ))}
           </div>
-          <div className=" flex text-center justify-around w-full md:w-0 md:py-[5vw]">
+          <div className=" pb-[30px] flex text-center justify-around w-full md:w-0 md:py-[5vw]">
             {items.map((item, i) => (
               <div
                 key={i}
@@ -116,12 +116,17 @@ const About = () => {
           </div>
         </motion.div>
         <div className="w-[90%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
-          <div
+          <motion.div
+            whileInView={{ x: [-130, 0], opacity: [0, 1] }}
+            transition={{ duration: 2 }}
+            className="mt-[3vw]"
+          >
+            {/* <div
             ref={headerRef}
             className={`${
-              isHeaderVisible ? "animate-slide-in-left-light" : ""
-            } pt-[50px]  md:mt-[3vw]`}
-          >
+              isCardVisible ? "animate-slide-in-left-light" : ""
+            }  mt-[3vw]`}
+          > */}
             <div className="md:mr-[-4.2vw] relative">
               <h6 className="absolute text-[15px] left-16 top-4 md:left-3 md:top-0 text-white md:text-left md:text-[1.4vw] py-2 animate-pulse ">
                 That's me in the office
@@ -131,8 +136,13 @@ const About = () => {
                 src={profilePicture}
               />
             </div>
-          </div>
-
+            {/* </div> */}
+          </motion.div>
+          {/* <motion.div
+            whileInView={{ x: [200, 0], opacity: [0, 1] }}
+            transition={{ duration: 1 }}
+            className="  md:w-[67%]"
+          > */}
           <div
             ref={cardRef}
             className={`${
@@ -193,6 +203,7 @@ const About = () => {
               </p>
             </div>
           </div>
+          {/* </motion.div> */}
         </div>
         <motion.div
           whileInView={{ y: [80, 0], opacity: [0, 1] }}
@@ -237,9 +248,9 @@ const About = () => {
               </p>
             </div>
           </div>
+          <div className="w-[75%] h-[2px] bg-stone-500 mx-auto "></div>
         </motion.div>
       </div>
-      <div className="w-[75%] h-[2px] bg-stone-500 mx-auto "></div>
     </div>
   );
 };
