@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import profilePicture from "../assets/profile.jpg";
 import "../InfinityText.css";
 import { IoDiamondOutline } from "react-icons/io5";
@@ -9,6 +9,26 @@ import { GoLightBulb } from "react-icons/go";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const [isCardVisible, setIsCardVisible] = useState(false);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    const handleCardScroll = () => {
+      const cardElement = cardRef.current;
+      if (cardElement) {
+        const rect = cardElement.getBoundingClientRect();
+        const isInView = rect.bottom >= 0 && rect.top <= window.innerHeight;
+        setIsCardVisible(isInView);
+      }
+    };
+
+    window.addEventListener("scroll", handleCardScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleCardScroll);
+    };
+  }, []);
+
   const items = [
     {
       icon: <IoDiamondOutline className="text-[40px] md:text-[3vw] mx-auto" />,
@@ -83,10 +103,11 @@ const About = () => {
           </div>
         </motion.div>
         <div className="w-[90%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
-          <motion.div
-            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
-            transition={{ duration: 1 }}
-            className="mt-[3vw]"
+          <div
+            ref={cardRef}
+            className={`${
+              isCardVisible ? "animate-slide-in-left-light" : ""
+            }  mt-[3vw]`}
           >
             <div className="md:mr-[-4.2vw] relative">
               <h6 className="absolute text-[15px] left-16 top-4 md:left-3 md:top-0 text-white md:text-left md:text-[1.4vw] py-2 animate-pulse ">
@@ -97,11 +118,13 @@ const About = () => {
                 src={profilePicture}
               />
             </div>
-          </motion.div>
-          <motion.div
-            whileInView={{ x: [0, 0], opacity: [0, 1] }}
-            transition={{ duration: 1 }}
-            className="  md:w-[67%]"
+          </div>
+
+          <div
+            ref={cardRef}
+            className={`${
+              isCardVisible ? "animate-slide-in-right-light" : ""
+            }  md:w-[67%]`}
           >
             <div className="flex flex-col gap-[10px] md:gap-[0.7vw] text-center md:text-left">
               <h3 className="text-[20px] text-center md:text-left md:text-[1.3vw] md:tracking-widest font-semibold text-red-600 mb-[10px] md:mb-[1vw]">
@@ -156,7 +179,7 @@ const About = () => {
                 Let's work together to bring your digital vision to life!
               </p>
             </div>
-          </motion.div>
+          </div>
         </div>
         <motion.div
           whileInView={{ y: [80, 0], opacity: [0, 1] }}
