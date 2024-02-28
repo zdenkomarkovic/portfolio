@@ -104,12 +104,12 @@ const About = () => {
             className="  md:w-[67%]"
           >
             <div className="flex flex-col gap-[10px] md:gap-[0.7vw] text-center md:text-left">
-              <h3 className="text-[20px] text-center md:text-left md:text-[1.3vw] text-red-600 uppercase mb-[10px] md:mb-[1vw]">
-                Im always interested about
+              <h3 className="text-[20px] text-center md:text-left md:text-[1.3vw] md:tracking-widest font-semibold text-red-600 mb-[10px] md:mb-[1vw]">
+                IM ALWAYS INTERESTED ABOUT
               </h3>
               <div className="flex justify-center md:justify-start md:ml-[2vw]">
                 <div className=" border-white border-[1px] md:border-[2px] rounded-full">
-                  <p className="text-white font-bold text-[15px] md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                  <p className="text-white font-bold text-[15px] md:tracking-widest md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                     FRONTEND/BACKEND DEVELOPMENT
                   </p>
                 </div>
@@ -117,26 +117,26 @@ const About = () => {
               <div className=" md:ml-[4.2vw] justify-center  md:justify-start flex gap-[10px] md:gap-[1vw]">
                 <div className="flex  ">
                   <div className="border-white border-[1px] md:border-[2px] rounded-full">
-                    <p className="text-white font-bold text-[15px] md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                    <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                       WEBFLOW DEVELOPMENT
                     </p>
                   </div>
                 </div>
                 <div className="border-white border-[1px] md:border-[2px] rounded-full">
-                  <p className="text-white font-bold text-[15px] md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                  <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                     STARTAPS
                   </p>
                 </div>
               </div>
               <div className="md:ml-[5.2vw] justify-center  md:justify-start flex gap-[10px] md:gap-[1vw]">
                 <div className="border-white border-[1px] md:border-[2px] rounded-full">
-                  <p className="text-white font-bold text-[15px] md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                  <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                     NEW BUSINESSES
                   </p>
                 </div>
                 <div className="flex">
                   <div className="border-white border-[1px] md:border-[2px] rounded-full">
-                    <p className="text-white font-bold text-[15px] md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                    <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                       EXTREME SPORTS
                     </p>
                   </div>
@@ -163,39 +163,43 @@ const About = () => {
           transition={{ duration: 1 }}
           className="card"
         >
-          <div className="flex flex-wrap justify-between py-[6vw] w-[90%]  md:w-[65%] mx-auto">
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              HTML
-            </p>
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              CSS
-            </p>
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              JavaScript
-            </p>
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              React.js
-            </p>
+          <div className="flex flex-col gap-[10px]  md:gap-[2vw] md:flex-row py-[6vw] w-[95%]  md:w-[65%] mx-auto text-center">
+            <div className="flex gap-[10px]  md:gap-[2vw] mx-auto">
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                HTML
+              </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                CSS
+              </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                JavaScript
+              </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                React.js
+              </p>
 
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              Next.js
-            </p>
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              Node.js
-            </p>
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              MongoDB
-            </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                Next.js
+              </p>
+            </div>
+            <div className="flex gap-[10px] md:gap-[2vw] mx-auto">
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                Node.js
+              </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                MongoDB
+              </p>
 
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              Figma
-            </p>
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              Tailwind
-            </p>
-            <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
-              SCSS
-            </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                Figma
+              </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                Tailwind
+              </p>
+              <p className="text-[12px] md:text-[1vw] border-black border-[1px] md:border-[2px] font-bold px-[5px] py-[1px] md:px-[0.5vw] md:py-[0.1vw] rounded-full">
+                SCSS
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>
