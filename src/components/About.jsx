@@ -11,60 +11,89 @@ import { motion } from "framer-motion";
 const About = () => {
   const items = [
     {
-      icon: <IoDiamondOutline className="text-[3vw] mx-auto" />,
-      text: <p className="py-[1vw] text-[1.05vw]">World class Apps</p>,
-    },
-    {
-      icon: <BsTools className="text-[3vw] mx-auto" />,
-      text: <p className="py-[1vw] text-[1.05vw]">Tailored To Your Needs</p>,
-    },
-    {
-      icon: <MdOutlineSpeed className="text-[3vw] mx-auto" />,
-      text: <p className="py-[1vw] text-[1.05vw]">Fast load times</p>,
-    },
-    {
-      icon: <LuMonitorSmartphone className="text-[3vw] mx-auto" />,
+      icon: <IoDiamondOutline className="text-[40px] md:text-[3vw] mx-auto" />,
       text: (
-        <p className="py-[1vw] text-[1.05vw]">
+        <p className=" text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
+          World class Apps
+        </p>
+      ),
+    },
+    {
+      icon: <BsTools className="text-[40px] md:text-[3vw] mx-auto" />,
+      text: (
+        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
+          Tailored To Your Needs
+        </p>
+      ),
+    },
+    {
+      icon: <MdOutlineSpeed className="text-[40px] md:text-[3vw] mx-auto" />,
+      text: (
+        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
+          Fast load times
+        </p>
+      ),
+    },
+    {
+      icon: (
+        <LuMonitorSmartphone className="text-[40px] md:text-[3vw] mx-auto" />
+      ),
+      text: (
+        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
           Responsive, work on all devices
         </p>
       ),
     },
     {
-      icon: <GoLightBulb className="text-[3vw] mx-auto" />,
-      text: <p className="py-[1vw] text-[1.05vw]">Intuitive and dynamic</p>,
+      icon: <GoLightBulb className="text-[40px] md:text-[3vw] mx-auto" />,
+      text: (
+        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
+          Intuitive and dynamic
+        </p>
+      ),
     },
   ];
 
   return (
-    <div className="bg-stone-400 ">
+    <div className="bg-stone-400 py-[20px] md:py-0 ">
       <div className="">
         <motion.div
           whileInView={{ scale: [0.95, 1], opacity: [0, 0.3, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="header-title"
+          className="flex flex-col md:flex-row w-[90%] md:w-[65%] mx-auto"
         >
-          <div className=" flex py-[5vw] justify-between  w-[65%] mx-auto">
-            {items.map((item, index) => (
-              <div key={index}>
+          <div className=" py-[20px] flex text-center justify-between w-full md:py-[5vw] mx-auto">
+            {items.map((item, i) => (
+              <div key={i} className={` ${i > 2 ? "hidden md:block" : ""}`}>
+                {item.icon}
+                {item.text}
+              </div>
+            ))}
+          </div>
+          <div className=" pb-[40px] flex text-center justify-around w-full md:w-0 md:py-[5vw]">
+            {items.map((item, i) => (
+              <div
+                key={i}
+                className={` ${i > 2 ? "inline-block" : "hidden"} md:hidden`}
+              >
                 {item.icon}
                 {item.text}
               </div>
             ))}
           </div>
         </motion.div>
-        <div className="flex justify-center items-center  w-[72%] mx-auto ">
+        <div className="flex flex-col md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
           <motion.div
             whileInView={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="text"
           >
-            <div className="mr-[-4vw]">
-              <h6 className="text-[1.3vw] py-2 animate-pulse ">
+            <div className="mr-[-4vw] relative">
+              <h6 className="absolute text-[15px] left-5 text-white md:text-left md:text-[1.3vw] py-2 animate-pulse ">
                 That's me in the office
               </h6>
               <img
-                className="w-[20vw] h-[20vw] object-cover rounded-full rounded-l-none"
+                className="w-[300px] h-[300px] md:w-[20vw] md:h-[20vw] object-cover md:rounded-full md:rounded-l-none"
                 src={profilePicture}
               />
             </div>
@@ -170,7 +199,7 @@ const About = () => {
           </div>
         </motion.div>
       </div>
-      <div className="w-[75%] h-[2.5px] bg-stone-500 mx-auto "></div>
+      <div className="w-[75%] h-[2px] bg-stone-500 mx-auto "></div>
     </div>
   );
 };
