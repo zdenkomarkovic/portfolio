@@ -82,14 +82,14 @@ const About = () => {
             ))}
           </div>
         </motion.div>
-        <div className="w-[95%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
+        <div className="w-[90%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
           <motion.div
             whileInView={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="mt-[3vw]"
           >
             <div className="md:mr-[-4.2vw] relative">
-              <h6 className="absolute text-[15px] left-16 top-4 md:left-3 md:top-0 text-white md:text-left md:text-[1.3vw] py-2 animate-pulse ">
+              <h6 className="absolute text-[15px] left-16 top-4 md:left-3 md:top-0 text-white md:text-left md:text-[1.4vw] py-2 animate-pulse ">
                 That's me in the office
               </h6>
               <img
@@ -99,7 +99,7 @@ const About = () => {
             </div>
           </motion.div>
           <motion.div
-            whileInView={{ x: [200, 0], opacity: [0, 1] }}
+            whileInView={{ x: [0, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="  md:w-[67%]"
           >

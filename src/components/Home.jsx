@@ -40,7 +40,7 @@ const Home = () => {
             </h2>
           </div>
           <div>
-            <h2 className="text-[1.3vw] mt-[6vw] ml-[20vw] animate-pulse">
+            <h2 className="text-[1.8vw] mt-[6vw] ml-[20vw] animate-pulse">
               That's me out of office hours
             </h2>
           </div>
