@@ -89,11 +89,11 @@ const About = () => {
             className="text"
           >
             <div className="mr-[-4vw] relative">
-              <h6 className="absolute text-[15px] left-5 text-white md:text-left md:text-[1.3vw] py-2 animate-pulse ">
+              <h6 className="absolute text-[15px] left-16 top-4 md:left-3 md:top-0 text-white md:text-left md:text-[1.3vw] py-2 animate-pulse ">
                 That's me in the office
               </h6>
               <img
-                className="w-[300px] h-[300px] md:w-[20vw] md:h-[20vw] object-cover md:rounded-full md:rounded-l-none"
+                className="w-[280px] h-[280px] md:w-[20vw] md:h-[20vw] object-cover rounded-lg md:rounded-full md:rounded-l-none"
                 src={profilePicture}
               />
             </div>
