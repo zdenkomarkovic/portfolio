@@ -41,7 +41,7 @@ const Home = () => {
       <div className=" hidden md:block text-white" style={{ ...divStyle }}>
         <div style={overlayStyle}></div>
         <div className="flex z-20">
-          <div className="flex  flex-col items-center mt-[15vw] ml-[20vw]">
+          <div className="flex  flex-col items-center mt-[20vw] ml-[20vw]">
             <h1 className="md:text-[2.5vw] z-10 ">
               Hello I'm <span className=" text-red-600">Zdenko Markovic</span>.
             </h1>
@@ -50,7 +50,7 @@ const Home = () => {
             </h2>
             <h2 className="md:text-[2.5vw] z-10">Nice to meet you!</h2>
 
-            <h2 className="text-[1.1vw] mt-[5vw] px-[1.1vw] py-[0.35vw] z-10">
+            <h2 className="text-[1.1vw] mt-[2vw] px-[1.1vw] py-[0.35vw] z-10">
               Please take a look around
             </h2>
           </div>
