@@ -33,13 +33,13 @@ const Home = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    // backgroundColor: "rgba(0, 0, 0, 0.7)",
   };
 
   return (
     <>
       <div className=" hidden md:block text-white" style={{ ...divStyle }}>
-        <div style={overlayStyle}></div>
+        <div className=" bg-black opacity-70 " style={overlayStyle}></div>
         <div className="flex z-20">
           <div className="flex  flex-col items-center mt-[20vw] ml-[20vw]">
             <h1 className="md:text-[2.5vw] z-10 ">
@@ -62,7 +62,7 @@ const Home = () => {
         </div>
       </div>
       <div className=" md:hidden text-white" style={{ ...divStyle }}>
-        <div style={overlayStyle}></div>
+        <div className=" bg-black opacity-80 " style={overlayStyle}></div>
         <div>
           <h2 className="text-[18px] pt-[80px] animate-pulse text-right mr-[20px]">
             That's me out of office hours
