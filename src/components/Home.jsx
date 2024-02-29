@@ -33,7 +33,6 @@ const Home = () => {
     left: 0,
     width: "100%",
     height: "100%",
-    // backgroundColor: "rgba(0, 0, 0, 0.7)",
   };
 
   return (
@@ -41,7 +40,7 @@ const Home = () => {
       <div className=" hidden md:block text-white" style={{ ...divStyle }}>
         <div className=" bg-black opacity-70 " style={overlayStyle}></div>
         <div className="flex z-20">
-          <div className="flex  flex-col items-center mt-[20vw] ml-[20vw]">
+          <div className="flex  flex-col items-center mt-[20vw] ml-[15vw]">
             <h1 className="md:text-[2.5vw] z-10 ">
               Hello I'm <span className=" text-red-600">Zdenko Markovic</span>.
             </h1>
