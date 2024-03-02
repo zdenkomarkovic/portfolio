@@ -19,7 +19,7 @@ const About = () => {
       const headerElement = headerRef.current;
       if (headerElement) {
         const rect = headerElement.getBoundingClientRect();
-        const isInView = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        const isInView = rect.bottom >= 0 && rect.top <= window.innerHeight;
         setIsHeaderVisible(isInView);
       }
     };
