@@ -154,7 +154,12 @@ const About = () => {
                 IM ALWAYS INTERESTED ABOUT
               </h3>
               <div className="flex justify-center md:justify-start md:ml-[2vw]">
-                <div className=" border-white border-[1px] md:border-[2px] rounded-full">
+                <div
+                  ref={headerRef}
+                  className={`${
+                    isHeaderVisible ? "  animate-slide-in-right-light " : ""
+                  } border-white border-[1px] md:border-[2px] rounded-full`}
+                >
                   <p className="text-white font-bold text-[15px] md:tracking-widest md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                     FRONTEND/BACKEND DEVELOPMENT
                   </p>
@@ -162,13 +167,21 @@ const About = () => {
               </div>
               <div className=" md:ml-[4.2vw] justify-center  md:justify-start flex gap-[10px] md:gap-[1vw]">
                 <div className="flex  ">
-                  <div className="border-white border-[1px] md:border-[2px] rounded-full">
+                  <div
+                    className={`${
+                      isHeaderVisible ? "  animate-slide-in-right-light " : ""
+                    } border-white border-[1px] md:border-[2px] rounded-full`}
+                  >
                     <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                       WEBFLOW DEVELOPMENT
                     </p>
                   </div>
                 </div>
-                <div className="border-white border-[1px] md:border-[2px] rounded-full">
+                <div
+                  className={`${
+                    isHeaderVisible ? "  animate-slide-in-left-light " : ""
+                  } border-white border-[1px] md:border-[2px] rounded-full`}
+                >
                   <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                     STARTAPS
                   </p>
