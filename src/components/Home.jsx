@@ -69,13 +69,13 @@ const Home = () => {
         </div>
         <div className="flex">
           <div className="flex flex-col items-center ml-[20px] justify-center  mt-[290px]">
-            <h1 className="text-[21px] z-10 ">
+            <h1 className="italic text-[21px] z-10 ">
               Hello I'm <span className=" text-red-600">Zdenko Markovic</span>.
             </h1>
-            <h2 className="text-[21px] md:text-[2.5vw] z-10">
+            <h2 className="italic text-[21px] md:text-[2.5vw] z-10">
               I'm a Full-Stack web developer
             </h2>
-            <h2 className="text-[21px] md:text-[2.5vw] z-10">
+            <h2 className="italic text-[21px] md:text-[2.5vw] z-10">
               Nice to meet you!
             </h2>
 

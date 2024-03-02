@@ -150,14 +150,14 @@ const About = () => {
             }  md:w-[67%]`}
           >
             <div className="flex flex-col gap-[10px] md:gap-[0.7vw] text-center md:text-left">
-              <h3 className="text-[20px] text-center md:text-left md:text-[1.3vw] md:tracking-widest font-semibold text-red-600 mb-[10px] md:mb-[1vw]">
+              <h3 className="italic  text-[20px] text-center md:text-left md:text-[1.5vw] md:tracking-widest font-semibold mb-[10px] md:mb-[1vw]">
                 IM ALWAYS INTERESTED ABOUT
               </h3>
               <div className="flex justify-center md:justify-start md:ml-[2vw]">
                 <div
                   ref={headerRef}
                   className={`${
-                    isHeaderVisible ? "  animate-slide-in-right-light " : ""
+                    isHeaderVisible ? "" : ""
                   } border-white border-[1px] md:border-[2px] rounded-full`}
                 >
                   <p className="text-white font-bold text-[15px] md:tracking-widest md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
@@ -169,7 +169,7 @@ const About = () => {
                 <div className="flex  ">
                   <div
                     className={`${
-                      isHeaderVisible ? "  animate-slide-in-right-light " : ""
+                      isHeaderVisible ? "" : ""
                     } border-white border-[1px] md:border-[2px] rounded-full`}
                   >
                     <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
@@ -179,7 +179,7 @@ const About = () => {
                 </div>
                 <div
                   className={`${
-                    isHeaderVisible ? "  animate-slide-in-left-light " : ""
+                    isHeaderVisible ? "" : ""
                   } border-white border-[1px] md:border-[2px] rounded-full`}
                 >
                   <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
