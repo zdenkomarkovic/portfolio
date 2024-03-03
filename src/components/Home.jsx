@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import backgroundPictureSm from "../assets/cover5.jpg";
 import backgroundPictureMd from "../assets/cover.jpg";
+import { Link } from "react-scroll";
 
 const Home = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -37,7 +38,11 @@ const Home = () => {
 
   return (
     <>
-      <div className="hidden md:block text-white" style={{ ...divStyle }}>
+      <div
+        id="home"
+        className="hidden md:block z-10 text-white"
+        style={{ ...divStyle }}
+      >
         <div className=" bg-black opacity-70 " style={overlayStyle}></div>
         <div className="flex z-20">
           <div className="flex  flex-col items-center mt-[20vw] ml-[15vw]">
@@ -48,10 +53,16 @@ const Home = () => {
               I'm a Full-Stack web developer
             </h2>
             <h2 className="italic md:text-[2.5vw] z-10">Nice to meet you!</h2>
-
-            <h2 className="text-[1.1vw] mt-[2vw] px-[1.1vw] py-[0.35vw] z-10">
-              Please take a look around
-            </h2>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer z-10"
+            >
+              <h2 className="text-[1.1vw] mt-[2vw] border-[1.5px] rounded-full  px-[1.1vw] py-[0.35vw]">
+                Please take a look around
+              </h2>
+            </Link>
           </div>
           <div>
             <h2 className="md:text-[1.8vw] md:mt-[6vw] md:ml-[20vw] animate-pulse">

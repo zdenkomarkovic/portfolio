@@ -38,7 +38,7 @@ const Work = () => {
   }, []);
 
   return (
-    <div className="bg-stone-400 text-white">
+    <div id="work" className="bg-stone-400 text-white">
       <div className="w-[90%] md:w-[65%] mx-auto pt-[60px] pb-[70px] md:pt-[6vw] md:pb-[8vw]">
         <div className="mb-[60px] md:mb-[8vw]">
           <h2
