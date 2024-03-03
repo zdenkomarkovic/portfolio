@@ -72,7 +72,6 @@ const Contact = () => {
     }
   };
 
-  console.log(formErrors);
   return (
     <div
       id="contact"

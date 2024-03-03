@@ -32,7 +32,7 @@ const ScrollToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="rotate-90 fixed bottom-[2vw] right-[2vw] text-white border-[2px] py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
+          className="rotate-90 fixed bottom-[25px] right-[15px] md:bottom-[2vw] md:right-[2vw] text-white border-[2px] py-2 px-4 rounded-full focus:outline-none focus:shadow-outline"
         >
           <TfiControlBackward />
         </button>
