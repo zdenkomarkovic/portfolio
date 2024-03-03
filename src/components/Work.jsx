@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
+import { cardData } from "../constants/constants";
 // import furnitureStore from "../assets/furnitureStore.png";
 import Card from "./Card";
-import { cardData } from "../constants/constants";
 
 const Work = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);

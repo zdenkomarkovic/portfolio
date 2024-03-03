@@ -1,12 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import profilePicture from "../assets/profile.jpg";
 import "../InfinityText.css";
-import { IoDiamondOutline } from "react-icons/io5";
-import { MdOutlineSpeed } from "react-icons/md";
-import { LuMonitorSmartphone } from "react-icons/lu";
-import { BsTools } from "react-icons/bs";
-import { GoLightBulb } from "react-icons/go";
+
 import { motion } from "framer-motion";
+import { items } from "../constants/constants";
 
 const About = () => {
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
@@ -42,51 +39,6 @@ const About = () => {
     };
   }, [scroll]);
 
-  const items = [
-    {
-      icon: <IoDiamondOutline className="text-[40px] md:text-[3vw] mx-auto" />,
-      text: (
-        <p className=" text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
-          World class Apps
-        </p>
-      ),
-    },
-    {
-      icon: <BsTools className="text-[40px] md:text-[3vw] mx-auto" />,
-      text: (
-        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
-          Tailored To Your Needs
-        </p>
-      ),
-    },
-    {
-      icon: <MdOutlineSpeed className="text-[40px] md:text-[3vw] mx-auto" />,
-      text: (
-        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
-          Fast load times
-        </p>
-      ),
-    },
-    {
-      icon: (
-        <LuMonitorSmartphone className="text-[40px] md:text-[3vw] mx-auto" />
-      ),
-      text: (
-        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
-          Responsive, work on all devices
-        </p>
-      ),
-    },
-    {
-      icon: <GoLightBulb className="text-[40px] md:text-[3vw] mx-auto" />,
-      text: (
-        <p className="text-[12px] py-[10px] md:py-[1vw] md:text-[1.05vw]">
-          Intuitive and dynamic
-        </p>
-      ),
-    },
-  ];
-
   return (
     <div id="about" className="bg-stone-400 py-[20px] md:py-0 ">
       <div className="">
@@ -115,18 +67,12 @@ const About = () => {
             ))}
           </div>
         </motion.div>
-        <div className="w-[90%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
+        <div className="relative w-[90%] flex flex-col gap-[30px] md:gap-0 md:flex-row justify-center items-center  md:w-[72%] mx-auto ">
           <motion.div
-            whileInView={{ x: [-130, 0], opacity: [0, 1] }}
+            whileInView={{ scale: [0.2, 1], opacity: [0, 0.3, 1] }}
             transition={{ duration: 2 }}
             className="mt-[3vw]"
           >
-            {/* <div
-            ref={headerRef}
-            className={`${
-              isCardVisible ? "animate-slide-in-left-light" : ""
-            }  mt-[3vw]`}
-          > */}
             <div className="md:mr-[-4.2vw] relative">
               <h6 className="absolute text-[15px] left-16 top-4 md:left-3 md:top-0 text-white md:text-left md:text-[1.4vw] py-2 animate-pulse ">
                 That's me in the office
@@ -136,13 +82,7 @@ const About = () => {
                 src={profilePicture}
               />
             </div>
-            {/* </div> */}
           </motion.div>
-          {/* <motion.div
-            whileInView={{ x: [200, 0], opacity: [0, 1] }}
-            transition={{ duration: 1 }}
-            className="  md:w-[67%]"
-          > */}
           <div
             ref={cardRef}
             className={`${
