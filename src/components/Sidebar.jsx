@@ -5,7 +5,7 @@ const Sidebar = () => {
   return (
     <>
       <div className="hidden md:block">
-        <div className=" fixed left-0 top-0 h-full w-64 ml-[2vw] flex gap-[1.2vw] text-[1vw] italic uppercase">
+        <div className=" fixed left-0 top-0 h-full w-64 ml-[2vw] flex gap-[1.1vw] text-[1vw] font-extralight italic uppercase">
           <Link to="home" smooth={true} duration={500}>
             <div className="cursor-pointer">
               <div className="h-[10vh] w-[1px] bg-black ml-[5px] mb-[4vh] mt-[4vh]"></div>
