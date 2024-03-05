@@ -40,7 +40,7 @@ const Work = () => {
   return (
     <div id="work" className="bg-stone-400 text-white">
       <div className="w-[90%] md:w-[65%] mx-auto pt-[60px] pb-[70px] md:pt-[6vw] md:pb-[8vw]">
-        <div className="mb-[60px] md:mb-[8vw]">
+        <div className="hidden md:block  mb-[60px] md:mb-[8vw]">
           <h2
             ref={headerRef}
             className={`text-[30px] md:text-[2.5vw] font-bold text-center ${
@@ -54,6 +54,20 @@ const Work = () => {
             className={`${
               isHeaderVisible ? " animate-slide-in-right" : ""
             } w-[160px] md:w-[15vw] h-[2.5px] md:h-[0.2vw] bg-white mx-auto`}
+          ></div>
+        </div>
+        <div
+          ref={headerRef}
+          className={` md:hidden  mb-[60px] md:mb-[8vw] ${
+            isHeaderVisible ? "transform duration-1000  scale-100 " : "scale-50"
+          }`}
+        >
+          <h2 className={`text-[30px] md:text-[2.5vw] font-bold text-center `}>
+            PROJECTS
+          </h2>
+
+          <div
+            className={` w-[160px] md:w-[15vw] h-[2.5px] md:h-[0.2vw] bg-white mx-auto`}
           ></div>
         </div>
         <div

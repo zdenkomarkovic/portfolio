@@ -7,7 +7,7 @@ import { GoLightBulb } from "react-icons/go";
 export const cardData = [
   {
     image: "./furnitureStore.png",
-    info: "",
+    info: "This e-commerce platform is built using React, Node, and MongoDB. Product search by name and category. Sort products by price. Shopping Cart functionality. Purchase confirmation emails. User activation emails. Manipulate product categories Add, delete, and update products",
     title: "Furniture store",
     subTitle: "React.js / Node.js / MongoDB",
     url: "https://furniture-store-r4p8.vercel.app",
