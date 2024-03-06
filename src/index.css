@@ -62,13 +62,31 @@
 
 @keyframes slide-up {
   0% {
-    transform: translateY(0);
+    opacity: 0;
+    transform: translateY(100%);
   }
   100% {
-    transform: translateY(-300%);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .animate-slide-up {
   animation: slide-up 1.5s ease-out forwards;
+}
+
+.delay1 {
+  animation-delay: 0.5s;
+}
+.delay2 {
+  animation-delay: 1s;
+}
+.delay3 {
+  animation-delay: 1.5s;
+}
+.delay4 {
+  animation-delay: 2s;
+}
+.delay5 {
+  animation-delay: 2.5s;
 }

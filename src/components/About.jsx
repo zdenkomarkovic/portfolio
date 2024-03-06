@@ -85,7 +85,7 @@ const About = () => {
           </motion.div>
           <div
             ref={cardRef}
-            className={`${
+            className={`hidden md:block ${
               isCardVisible ? "animate-slide-in-right-light" : ""
             }  md:w-[67%]`}
           >
@@ -95,10 +95,7 @@ const About = () => {
               </h3>
               <div className="flex justify-center md:justify-start md:ml-[2vw]">
                 <div
-                  ref={headerRef}
-                  className={`${
-                    isHeaderVisible ? "" : ""
-                  } border-white border-[1px] md:border-[2px] rounded-full`}
+                  className={` border-white border-[1px] md:border-[2px] rounded-full`}
                 >
                   <p className="text-white font-bold text-[15px] md:tracking-widest md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                     FRONTEND/BACKEND DEVELOPMENT
@@ -108,9 +105,7 @@ const About = () => {
               <div className=" md:ml-[4.2vw] justify-center  md:justify-start flex gap-[10px] md:gap-[1vw]">
                 <div className="flex  ">
                   <div
-                    className={`${
-                      isHeaderVisible ? "" : ""
-                    } border-white border-[1px] md:border-[2px] rounded-full`}
+                    className={` border-white border-[1px] md:border-[2px] rounded-full`}
                   >
                     <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                       WEBFLOW DEVELOPMENT
@@ -118,9 +113,7 @@ const About = () => {
                   </div>
                 </div>
                 <div
-                  className={`${
-                    isHeaderVisible ? "" : ""
-                  } border-white border-[1px] md:border-[2px] rounded-full`}
+                  className={` border-white border-[1px] md:border-[2px] rounded-full`}
                 >
                   <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
                     STARTAPS
@@ -154,6 +147,87 @@ const About = () => {
               <p className="text-[15px] md:text-[1.05vw] ">
                 Let's work together to bring your digital vision to life!
               </p>
+            </div>
+          </div>
+          <div ref={headerRef} className={` md:hidden   md:w-[67%]`}>
+            <div className="flex flex-col gap-[15px] md:gap-[0.7vw] text-center md:text-left">
+              <h3 className="italic  text-[20px] text-center md:text-left md:text-[1.5vw] md:tracking-widest font-semibold mb-[10px] md:mb-[1vw]">
+                IM ALWAYS INTERESTED ABOUT
+              </h3>
+              <div className="flex justify-center md:justify-start md:ml-[2vw]">
+                <div
+                  className={`${
+                    isHeaderVisible ? " animate-slide-up" : ""
+                  } border-white border-[1px] md:border-[2px] rounded-full`}
+                >
+                  <p className="text-white font-bold text-[15px] md:tracking-widest md:text-[1.4vw] px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                    FRONTEND/BACKEND DEVELOPMENT
+                  </p>
+                </div>
+              </div>
+              <div className=" md:ml-[4.2vw] justify-center  md:justify-start flex gap-[10px] md:gap-[1vw]">
+                <div className="flex  ">
+                  <div
+                    className={` opacity-0 ${
+                      isHeaderVisible ? "animate-slide-up delay1" : ""
+                    } border-white border-[1px] md:border-[2px] rounded-full`}
+                  >
+                    <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                      WEBFLOW DEVELOPMENT
+                    </p>
+                  </div>
+                </div>
+                <div
+                  className={` opacity-0 ${
+                    isHeaderVisible ? " animate-slide-up delay2" : ""
+                  } border-white border-[1px] md:border-[2px] rounded-full`}
+                >
+                  <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                    STARTAPS
+                  </p>
+                </div>
+              </div>
+              <div className="md:ml-[5.2vw] justify-center  md:justify-start flex gap-[10px] md:gap-[1vw]">
+                <div
+                  className={`  opacity-0 ${
+                    isHeaderVisible ? " animate-slide-up delay3" : ""
+                  } border-white border-[1px] md:border-[2px] rounded-full`}
+                >
+                  <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                    NEW BUSINESSES
+                  </p>
+                </div>
+                <div
+                  className={` opacity-0 ${
+                    isHeaderVisible ? " animate-slide-up delay4" : ""
+                  } flex`}
+                >
+                  <div className="border-white border-[1px] md:border-[2px] rounded-full">
+                    <p className="text-white font-bold text-[15px] md:text-[1.4vw] md:tracking-widest px-[8px] py-[1.5px] md:px-[1.1vw] md:py-[0.3vw]">
+                      EXTREME SPORTS
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={` opacity-0 ${
+                  isHeaderVisible ? " animate-slide-up delay5" : ""
+                } text-left`}
+              >
+                <p className="text-[15px] md:text-[1.05vw] md:mt-[0.7vw] md:ml-[5.2vw] ">
+                  I'm a passionate Full-Stack web developer freelancer,
+                  specializing in crafting dynamic user experiences through
+                  innovative UI designs and seamless functionality.
+                </p>
+                <p className="text-[15px] md:text-[1.05vw] md:ml-[3.2vw]">
+                  Dedicated to creating top-notch software that enhances lives,
+                  I work with a diverse range of clients, from individuals and
+                  small businesses to large enterprises.
+                </p>
+                <p className="text-[15px] md:text-[1.05vw] ">
+                  Let's work together to bring your digital vision to life!
+                </p>
+              </div>
             </div>
           </div>
           {/* </motion.div> */}

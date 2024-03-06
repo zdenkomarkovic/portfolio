@@ -57,9 +57,9 @@ const Work = () => {
           ></div>
         </div>
         <div
-          ref={headerRef}
+          ref={cardRef}
           className={` md:hidden  mb-[60px] md:mb-[8vw] ${
-            isHeaderVisible ? "transform duration-1000  scale-100 " : "scale-50"
+            isCardVisible ? "transform duration-1000  scale-100 " : "scale-50"
           }`}
         >
           <h2 className={`text-[30px] md:text-[2.5vw] font-bold text-center `}>
@@ -67,14 +67,11 @@ const Work = () => {
           </h2>
 
           <div
-            className={` w-[160px] md:w-[15vw] h-[2.5px] md:h-[0.2vw] bg-white mx-auto`}
+            className={`w-[160px] md:w-[15vw] h-[2.5px] md:h-[0.2vw] bg-white mx-auto`}
           ></div>
         </div>
         <div
-          ref={cardRef}
-          className={`flex pb-[25px]  flex-col gap-[40px] md:pb-[5vw] md:gap-0 md:flex-row justify-between transition-opacity duration-1000 ${
-            isCardVisible ? "" : ""
-          } `}
+          className={`flex pb-[25px]  flex-col gap-[40px] md:pb-[5vw] md:gap-0 md:flex-row justify-between`}
         >
           {cardData.map((data, i) => {
             return <Card key={i} data={data} />;
