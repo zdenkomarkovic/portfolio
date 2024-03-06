@@ -75,7 +75,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className=" bg-stone-500  text-white pt-[50px] md:pt-[5vw] pb-[50px] md:pb-[8vw]"
+      className=" bg-gray2  text-white pt-[50px] md:pt-[5vw] pb-[50px] md:pb-[8vw]"
     >
       <div className="w-[90%] md:w-[65vw] mx-auto">
         <h2

@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        lightGray: "#ededed",
+        lightGray: "#ece7e1",
+        gray2: "#d4cdc8",
       },
       animation: {
         "spin-slow": "spin 3s linear forwards",

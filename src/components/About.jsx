@@ -40,7 +40,7 @@ const About = () => {
   }, [scroll]);
 
   return (
-    <div id="about" className="bg-stone-400 py-[20px] md:py-0 ">
+    <div id="about" className="bg-lightGray py-[20px] md:py-0 ">
       <div className="">
         <motion.div
           whileInView={{ scale: [0.95, 1], opacity: [0, 0.3, 1] }}
