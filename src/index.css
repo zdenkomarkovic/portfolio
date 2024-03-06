@@ -76,18 +76,17 @@
 }
 
 .delay1 {
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 .delay2 {
-  animation-delay: 0.9s;
+  animation-delay: 0.6s;
 }
 .delay3 {
-  animation-delay: 1.3s;
+  animation-delay: 0.9s;
 }
 .delay4 {
-  animation-delay: 1.7s;
+  animation-delay: 1.2s;
 }
 .delay5 {
-  animation-delay: 2.1s;
-  color: #dcd5cc;
+  animation-delay: 1.5s;
 }

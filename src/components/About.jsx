@@ -212,7 +212,7 @@ const About = () => {
               <div
                 className={` opacity-0 ${
                   isHeaderVisible ? " animate-slide-up delay5" : ""
-                } text-left`}
+                }`}
               >
                 <p className="text-[15px] md:text-[1.05vw] md:mt-[0.7vw] md:ml-[5.2vw] ">
                   I'm a passionate Full-Stack web developer freelancer,
